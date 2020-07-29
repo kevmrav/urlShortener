@@ -19,6 +19,7 @@ class UrlMap extends Model
 
     /*
      * Create shortened url from an source url
+     * and set expiration date 30 days out
      */
     public function create($originalUrl)
     {
