@@ -21,7 +21,9 @@ class UrlMapTest extends TestCase
     public function testUrlMapMethods()
     {
         $this->verify404StatusOnEmptyPageLoad();
+
         $this->ConvertOriginalUrlToShortUrl();
+
         $this->getOriginalUrlByItsShortUrl();
     }
 

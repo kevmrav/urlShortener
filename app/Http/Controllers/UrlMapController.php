@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\UrlMap;
 use Log;
+use DB;
+
 
 class UrlMapController extends Controller
 {
@@ -18,7 +20,7 @@ class UrlMapController extends Controller
 
         $shortenedUrl = $urlmap->create($originalUrl);
 
-        echo json_encode(['newUrl' => $shortenedUrl], JSON_UNESCAPED_SLASHES);
+        return response()->json($shortenedUrl);
     }
 
     /**

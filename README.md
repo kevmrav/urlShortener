@@ -7,6 +7,8 @@ following rules:
 3. Use only letters and numbers
 4. Use PHP
 5. Use tests
+
+
 The returned URL should be saved in a database, having an expiration date (you may
 choose the expiration date). The response must be the shortened URL.
 When your application receives the shortened URL, the response should redirect your
